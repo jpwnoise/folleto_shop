@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,29 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Novillero",
   description: "Mariscos a domicilio",
-};
+  openGraph: {
+    title: "Novillero",
+    description: "Mariscos a domicilio",
+    url: "https://vercel.com/jpwnoises-projects/folleto_shop",
+    siteName: "Novillero",
+    images: [
+      {
+        url: "/hero-2.png", // asegúrate que esté en /public
+        width: 1200,
+        height: 630,
+        alt: "Novillero - Mariscos a domicilio",
+      },
+    ],
+    locale: "es_MX",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Novillero",
+    description: "Mariscos a domicilio",
+    images: ["/hero-2.png"],
+  },
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -33,11 +56,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         </header>
         <main className="p-6">{children}</main>
+        <Analytics></Analytics>
         <footer className="bg-[var(--color-secondary)] text-white p-4 text-center">
-          <p>Servicio a domicilio gratis · Tel: 384 108 8723</p>
+          <p>Servicio a domicilio gratis · Tel: 3313262108</p>
         </footer>
       </body>
     </html>
   );
 }
-
