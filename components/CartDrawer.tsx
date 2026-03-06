@@ -10,7 +10,7 @@ interface CartDrawerProps {
 }
 
 
-export function generateWhatsAppMessageURL(phoneNumber: string = "3313262108"): string {
+export function generateWhatsAppMessageURL(phoneNumber: string = "3313262108"): void {
     const cart = getCart()
 
     let message = "Hola, quiero hacer un pedido:\n\n"
