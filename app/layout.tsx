@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Novillero",
     images: [
       {
-        url: "/hero-2.png", // asegúrate que esté en /public
+        url: "/logo-2.png", // asegúrate que esté en /public
         width: 1200,
         height: 630,
         alt: "Novillero - Mariscos a domicilio",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Novillero",
     description: "Mariscos a domicilio",
-    images: ["/hero-2.png"],
+    images: ["/logo-2.png"],
   },
 }
 
