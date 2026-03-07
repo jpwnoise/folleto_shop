@@ -8,9 +8,6 @@ import CartIcon from "@/components/CartIcon";
 import { useState } from "react"
 import CartDrawer from "@/components/CartDrawer";
 
-
-
-
 const products = [
   { name: "Camarón GDE con cabeza", price: 220, image: "/camaron_gde_cabeza.png" },
   { name: "Camarón GDE sin cabeza", price: 260, image: "/camaron_gde_no_cabeza.png" },
@@ -25,7 +22,6 @@ const products = [
   { name: "Salmón", price: 350, image: "/salmon.png" },
   { name: "Pulpo crudo", price: 260, image: "/pulpo_crudo.png" },
 ];
-
 
 export default function HomePage() {
 const [cartOpen, setCartOpen] = useState(false)
@@ -79,7 +75,7 @@ function openCart() {
           Catálogo
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {products.map((p) => (
             <ProductCard
               key={p.name}

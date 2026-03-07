@@ -44,9 +44,11 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
         setCart(getCart())
     }, [open])
 
+    //vaciado del carrito 
     function handleClearCart() {
         clearCart()
         setCart([])
+          window.dispatchEvent(new Event("cartUpdated"))
     }
 
     const total = cart.reduce(

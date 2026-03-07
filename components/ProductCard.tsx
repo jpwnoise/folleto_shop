@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function ProductCard({ name, price, unit = "kg", image }: ProductCardProps) {
   return (
-    <div className="shadow-xl rounded-lg shadow-md p-4 hover:scale-105 transition">
+    <div className="shadow-xl rounded-lg shadow-md p-4 hover:scale-105 transition border border-gray-300">
       {image && (
         <Image
           src={image}
