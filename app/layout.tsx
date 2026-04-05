@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   title: "Novillero",
   description: "Mariscos a domicilio",
   openGraph: {
-    title: "Novillero",
-    description: "Mariscos a domicilio",
+    title: "Novillero | Venta de mariscos a domicilio",
+    description: "Disfruta mariscos frescos hasta la puerta de tu casa. Compra camarón, pulpo, atún y más en nuestro catálogo online tipo ecommerce, agrega al carrito y realiza tu pedido fácil y rápido vía WhatsApp.",
     url: "https://vercel.com/jpwnoises-projects/folleto_shop",
     siteName: "Novillero",
     images: [
